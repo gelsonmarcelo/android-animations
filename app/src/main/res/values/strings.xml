@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">AnimationExamples</string>
+
     <string name="android_animations">Android Animations</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fade_animation">Fade Animation</string>
     <string name="basic_animations">Basic Animations</string>
+    <string name="explode_animation">Explode Animation</string>
+    <string name="slide_animation">Slide Animation</string>
 </resources>

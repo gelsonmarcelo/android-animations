@@ -16,18 +16,36 @@
         android:text="@string/android_animations"
         android:textSize="@dimen/text_size_24" />
 
-    <ImageView
-        android:id="@+id/image"
+    <FrameLayout
+        android:id="@+id/animated_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_default"
-        android:src="@drawable/earth"
-        tools:ignore="ContentDescription" />
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_default"
+            android:src="@drawable/earth"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/fade_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/fade_animation" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/explode_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/explode_animation" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/slide_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/slide_animation" />
 
 </LinearLayout>
