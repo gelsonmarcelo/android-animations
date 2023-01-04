@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import br.edu.ifc.fraiburgo.animationexamples.databinding.FragmentBasicAnimationBinding
-import br.edu.ifc.fraiburgo.animationexamples.databinding.FragmentStartBinding
 
 class BasicAnimationFragment : Fragment() {
 
