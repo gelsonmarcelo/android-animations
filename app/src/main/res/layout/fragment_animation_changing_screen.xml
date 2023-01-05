@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="@dimen/padding_24"
-    tools:context=".BasicAnimationFragment">
+    android:padding="@dimen/padding_24">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/basic_animations_button"
+    <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/margin_default"
-        android:text="@string/basic_animations" />
+        android:gravity="center"
+        android:text="@string/animation_changing_scenes"
+        android:textSize="@dimen/text_size_24" />
+
+    <FrameLayout
+        android:id="@+id/animated_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/animations_changing_screen"
+        android:id="@+id/change_scene_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_default"
-        android:text="@string/animation_changing_scenes" />
+        android:text="@string/change_scene" />
 
 </LinearLayout>

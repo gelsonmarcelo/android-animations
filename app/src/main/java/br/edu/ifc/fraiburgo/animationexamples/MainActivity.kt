@@ -1,6 +1,9 @@
 package br.edu.ifc.fraiburgo.animationexamples
 
 import android.os.Bundle
+import android.transition.Scene
+import android.transition.TransitionManager
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import br.edu.ifc.fraiburgo.animationexamples.databinding.ActivityMainBinding
 

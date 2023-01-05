@@ -18,11 +18,24 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
 
+        <action
+            android:id="@+id/to_animationChangingScreenFragment"
+            app:destination="@id/animationChangingScreenFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
     </fragment>
 
     <fragment
         android:id="@+id/basicAnimationFragment"
         android:name="br.edu.ifc.fraiburgo.animationexamples.BasicAnimationFragment"
         tools:layout="@layout/fragment_basic_animation" />
+
+    <fragment
+        android:id="@+id/animationChangingScreenFragment"
+        android:name="br.edu.ifc.fraiburgo.animationexamples.AnimationChangingScreenFragment"
+        tools:layout="@layout/fragment_animation_changing_screen_1" />
 
 </navigation>

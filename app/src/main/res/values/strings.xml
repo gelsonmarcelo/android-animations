@@ -6,4 +6,8 @@
     <string name="basic_animations">Basic Animations</string>
     <string name="explode_animation">Explode Animation</string>
     <string name="slide_animation">Slide Animation</string>
+    <string name="animation_changing_scenes">Animation Changing Scenes</string>
+    <string name="change_scene">Change Scene</string>
+    <string name="previous_scene">Previous Scene</string>
+    <string name="second_screen">Second Screen</string>
 </resources>

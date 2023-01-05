@@ -27,9 +27,17 @@ class StartFragment : Fragment() {
         binding.basicAnimationsButton.setOnClickListener {
             navigateToBasicAnimationFragment()
         }
+
+        binding.animationsChangingScreen.setOnClickListener {
+            navigateToAnimationChangingScreenFragment()
+        }
     }
 
     private fun navigateToBasicAnimationFragment() {
         findNavController().navigate(R.id.basicAnimationFragment)
+    }
+
+    private fun navigateToAnimationChangingScreenFragment() {
+        findNavController().navigate(R.id.animationChangingScreenFragment)
     }
 }
