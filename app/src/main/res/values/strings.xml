@@ -10,4 +10,7 @@
     <string name="change_scene">Change Scene</string>
     <string name="previous_scene">Previous Scene</string>
     <string name="second_screen">Second Screen</string>
+    <string name="transition_between_activity">Transition Between Activity</string>
+    <string name="animation_between_activity">Animation Between Activity</string>
+    <string name="choose_animation">Choose To See Animation</string>
 </resources>

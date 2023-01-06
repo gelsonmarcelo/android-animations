@@ -2,6 +2,8 @@ package br.edu.ifc.fraiburgo.animationexamples
 
 import android.os.Bundle
 import android.transition.Scene
+import android.transition.Transition
+import android.transition.TransitionInflater
 import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
@@ -15,12 +17,16 @@ class AnimationChangingScreenFragment : Fragment() {
     private lateinit var sceneOne: Scene
     private lateinit var sceneTwo: Scene
     private var startAnimation = true
+    private lateinit var customTransition: Transition
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentAnimationChangingScreenBinding.inflate(layoutInflater)
+
+        customTransition = TransitionInflater.from(requireContext())
+            .inflateTransition(R.transition.custom_scene_transition)
 
         setupListeners()
         setupScenes()
@@ -50,10 +56,10 @@ class AnimationChangingScreenFragment : Fragment() {
 
     private fun changeScene() {
         startAnimation = if (startAnimation) {
-            TransitionManager.go(sceneTwo)
+            TransitionManager.go(sceneTwo, customTransition)
             false
         } else {
-            TransitionManager.go(sceneOne)
+            TransitionManager.go(sceneOne, customTransition)
             true
         }
     }

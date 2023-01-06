@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="@dimen/padding_24">
+    android:padding="@dimen/padding_24"
+    tools:context=".AfterActivity">
 
     <TextView
         android:id="@+id/title"
@@ -11,18 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/animation_changing_scenes" />
+        android:text="@string/animation_between_activity" />
 
-    <FrameLayout
-        android:id="@+id/animated_container"
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:src="@drawable/earth_super_happy"
+        tools:ignore="ContentDescription" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/change_scene_button"
+        android:id="@+id/previous_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/change_scene" />
+        android:text="@string/transition_between_activity" />
 
 </LinearLayout>

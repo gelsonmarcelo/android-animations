@@ -7,6 +7,14 @@
     android:padding="@dimen/padding_24"
     tools:context=".BasicAnimationFragment">
 
+    <TextView
+        android:id="@+id/title"
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/choose_animation" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/basic_animations_button"
         android:layout_width="match_parent"
@@ -20,5 +28,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/margin_default"
         android:text="@string/animation_changing_scenes" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/animations_between_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:text="@string/animation_between_activity" />
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package br.edu.ifc.fraiburgo.animationexamples
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -31,6 +32,10 @@ class StartFragment : Fragment() {
         binding.animationsChangingScreen.setOnClickListener {
             navigateToAnimationChangingScreenFragment()
         }
+
+        binding.animationsBetweenActivity.setOnClickListener {
+            startAnimationBetweenActivity()
+        }
     }
 
     private fun navigateToBasicAnimationFragment() {
@@ -39,5 +44,10 @@ class StartFragment : Fragment() {
 
     private fun navigateToAnimationChangingScreenFragment() {
         findNavController().navigate(R.id.animationChangingScreenFragment)
+    }
+
+    private fun startAnimationBetweenActivity() {
+        val intent = Intent(requireContext(), TransitionBetweenViewsActivity::class.java)
+        startActivity(intent)
     }
 }
